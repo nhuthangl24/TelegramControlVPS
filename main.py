@@ -10,11 +10,11 @@ from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, ContextTypes, filters
 
 # ---------- CONFIG ----------
-TG_TOKEN = os.environ.get("TG_TOKEN", "8463777754:AAHnhArBwdzKBAHu5C1FPvGlKHGu1xSB_-c")
-AUTHORIZED_CHAT = int(os.environ.get("AUTHORIZED_CHAT_ID", "7680591804"))
-VPS_IP = os.environ.get("VPS_IP", "103.67.196.76")
+TG_TOKEN = os.environ.get("TG_TOKEN", "dien token vo day")
+AUTHORIZED_CHAT = int(os.environ.get("AUTHORIZED_CHAT_ID", "ID NAY LA ID ACC MINH"))
+VPS_IP = os.environ.get("VPS_IP", "ipvps")
 VPS_USER = os.environ.get("VPS_USER", "root")
-VPS_PASS = os.environ.get("VPS_PASS", "TDCloud86#Sv1H@")   # strongly: use SSH key instead
+VPS_PASS = os.environ.get("VPS_PASS", "TDCloud86#Sv1H@")   # KHONG CAN SUA PASS
 # log file for bot actions
 LOGFILE = Path("telegram_remote_control.log")
 # ---------- END CONFIG ----------
