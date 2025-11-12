@@ -31,7 +31,7 @@ while true; do
     sleep 2
 done
 
-python3 set_monitor_fixed.py
+python3 set_monitor_fixed.py ( chưa up ) đang fix
 
 
 dùng telegram để làm gì
